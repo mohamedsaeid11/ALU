@@ -1,6 +1,7 @@
 module arith_unit 
-#(parameter width = 16  ,
- width2 = 32  ) 
+
+#(parameter width = 16  ,  width2 = 32  ) 
+
  (
 
 input wire signed [width -1 : 0] A  ,
@@ -12,7 +13,7 @@ input wire reset ,
 output reg [width2 -1 : 0]arith_out ,
 output reg arith_flag  
 
-) ; 
+ ) ; 
 
 reg [width2 -1 : 0] arith_comb ; 
 reg arith_flag_comb ; 
